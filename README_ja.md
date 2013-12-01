@@ -1,5 +1,6 @@
 Run Force.com Security Source Code Scanner
 ===========================================
+\[[English version](README.md)\]
 
 はじめに
 --------
@@ -40,3 +41,22 @@ build.xmlを開き、projectルート要素に、**xmlns:runfscscanner="antlib:j
 定義したrunFscScannerタスクを含むターゲットをAntから実行してください。
 Force.com Security Source Code Scanner のスキャン結果は、Webページから実行した場合と同様にメールで届きます。
 メールで届いたスキャン結果を確認してください。
+
+
+RunFscScanner タスクリファレンス
+-------------------------------
+runFscScannerタスクは Force.com Security Source Code Scanner を実行するために使用されます。
+
+<dl>
+<dt>**username**</dt>
+<dd>必須の属性。Force.com Security Source Code Scanner 実行時に入力するユーザー名。</dd>
+
+<dt>**description**</dt>
+<dd>任意の属性。Force.com Security Source Code Scanner 実行時に入力する説明。</dd>
+
+<dt>**description**</dt>
+<dd>必須の属性。Force.com Security Source Code Scanner 実行時に入力するScanProfile。有効な値は'All Rules', 'Security Rules', 'Quality Rules', 'Beta Rules (+CRUD/FLS)', 'Quality Beta Rules'のいずれか。</dd>
+</dl>
+
+
+
